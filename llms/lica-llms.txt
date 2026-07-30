@@ -1,0 +1,50 @@
+# Lica
+
+> Lica is an AI research company building a substrate to train and evaluate AI models
+> as capable design partners. Its research targets spatial reasoning and composition,
+> layout generation and editing, vector-graphics (SVG) understanding, personalization
+> and brand identity, and animation generation. Lica publishes the LICA dataset of
+> layered graphic-design compositions and GDB (Graphic Design Benchmark), a
+> real-world benchmark scoring frontier models on designer workflows. Backed by
+> Accel, South Park Commons and Village Global. Lica does not currently publish a
+> public API, developer portal, or API reference; api.lica.world exists but requires
+> authentication.
+
+## Company
+- [Website](https://www.lica.world/): Company home — "Simulating Creative Intelligence"
+- [Research](https://www.lica.world/research): The five research pillars Lica works on
+- [Careers](https://www.lica.world/careers): Open roles
+- [Early access](https://www.lica.world/early-access): Email waitlist for product beta
+
+## Open source
+- [GitHub organization](https://github.com/lica-world): Lica's public repositories
+- [DesignMCP](https://github.com/lica-world/DesignMCP): First-party MCP server for AI
+  design/multimedia tooling (Streamable HTTP, self-hosted via Docker Compose, port 8000)
+- [GDB](https://github.com/lica-world/GDB): GraphicDesignBench — real-world benchmark for
+  evaluating AI on graphic-design tasks
+- [lica-dataset](https://github.com/lica-world/lica-dataset): Graphic-design layouts with
+  component-level specs and annotations
+- [harbor](https://github.com/lica-world/harbor): Framework for running agent evaluations
+  and building RL environments
+
+## Research and writing
+- [GDB: A Real-World Benchmark for Graphic Design](https://www.lica.world/blog/gdb-real-world-benchmark-for-graphic-design)
+- [Introducing LICA: A Dataset of 1.5M Layered Graphic Design Compositions](https://www.lica.world/blog/introducing-lica-dataset)
+- [Why AI Can Dream Up a Scene - But Can't Design](https://www.lica.world/blog/why-ai-can-dream-up-a-scene-but-cant-design)
+- [Why Designers Need Layers, Not Just Pictures!](https://www.lica.world/blog/why-designers-need-layers-not-just-pictures)
+- [Why SVG Generation Needs a New Scorecard](https://www.lica.world/blog/why-svg-generation-needs-a-new-scorecard)
+
+## Artifacts
+- [MCP server profile](https://raw.githubusercontent.com/api-evangelist/lica/refs/heads/main/mcp/lica-mcp.yml)
+- [Well-known probe record](https://raw.githubusercontent.com/api-evangelist/lica/refs/heads/main/well-known/lica-well-known.yml)
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/lica/refs/heads/main/security/lica-domain-security.yml)
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/lica/refs/heads/main/apis.yml)
+
+## Legal
+- [Terms and conditions](https://www.lica.world/tc-agency)
+- [Privacy policy](https://www.lica.world/privacy-policy)
+
+## Optional
+- Lica publishes no OpenAPI, AsyncAPI, SDK packages, CLI, sandbox, changelog, status
+  page, or public API reference as of 2026-07-19. Those artifacts are intentionally
+  absent from this repo rather than fabricated.

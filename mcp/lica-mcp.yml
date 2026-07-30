@@ -1,0 +1,58 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/lica-world/DesignMCP
+status: published
+notes: >-
+  First-party open-source MCP server published by the Lica GitHub organization
+  (lica-world/DesignMCP), authored for the "LICA @ HackMIT" design workshop. It is
+  self-hosted (Docker Compose) rather than a hosted/remote endpoint — Lica publishes
+  no public hosted MCP URL. The server proxies third-party generative-media providers,
+  so operators supply their own provider API keys. Licensed for educational use;
+  commercial use requires explicit permission from Lica.
+server:
+  name: designmcp
+  repository: https://github.com/lica-world/DesignMCP
+  transport: http
+  transport_detail: Streamable HTTP
+  hosted_url: null
+  self_host:
+    method: docker-compose
+    command: docker compose up -d
+    server_port: 8000
+    assistant_port: 8501
+    assistant: Streamlit MCP assistant (mcp-assistant/)
+  license: Educational use; commercial use requires permission from the Lica team
+environment:
+- name: ELEVENLABS_API_KEY
+  purpose: Text-to-speech and dubbing
+- name: SYNTHESIA_API_KEY
+  purpose: Text-to-video generation
+- name: KLING_ACCESS_KEY
+  purpose: Image and video generation
+- name: KLING_SECRET_KEY
+  purpose: JWT authentication for Kling
+- name: BACKGROUND_ERASE_API_KEY
+  purpose: Image background removal
+- name: SHOTSTACK_API_KEY
+  purpose: Video subtitle processing
+tools:
+- name: get_external_server_tools
+  description: Discover tools exposed by an external MCP server
+- name: execute_external_tool
+  description: Execute a tool on an external MCP server
+- name: text_to_speech
+  description: Generate speech audio from text
+- name: audio_video_dubbing
+  description: Dub audio/video into another language
+- name: remove_background
+  description: Remove the background from an image
+- name: text_to_image
+  description: Generate an image from a text prompt
+- name: image_to_video
+  description: Generate video from a source image
+- name: lip_sync
+  description: Lip-sync a video to an audio track
+- name: add_subtitles
+  description: Add subtitles to a video
+- name: text_to_video
+  description: Generate video from a text prompt
