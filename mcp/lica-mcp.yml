@@ -2,13 +2,11 @@ generated: '2026-07-19'
 method: searched
 source: https://github.com/lica-world/DesignMCP
 status: published
-notes: >-
-  First-party open-source MCP server published by the Lica GitHub organization
-  (lica-world/DesignMCP), authored for the "LICA @ HackMIT" design workshop. It is
-  self-hosted (Docker Compose) rather than a hosted/remote endpoint — Lica publishes
-  no public hosted MCP URL. The server proxies third-party generative-media providers,
-  so operators supply their own provider API keys. Licensed for educational use;
-  commercial use requires explicit permission from Lica.
+notes: First-party open-source MCP server published by the Lica GitHub organization (lica-world/DesignMCP),
+  authored for the "LICA @ HackMIT" design workshop. It is self-hosted (Docker Compose) rather than a
+  hosted/remote endpoint — Lica publishes no public hosted MCP URL. The server proxies third-party generative-media
+  providers, so operators supply their own provider API keys. Licensed for educational use; commercial
+  use requires explicit permission from Lica.
 server:
   name: designmcp
   repository: https://github.com/lica-world/DesignMCP
@@ -56,3 +54,9 @@ tools:
   description: Add subtitles to a video
 - name: text_to_video
   description: Generate video from a text prompt
+deployment:
+  mode: remote
+  verified: searched
+  tools: 10
+  checked: '2026-08-12'
+  source: catalog MCP census
