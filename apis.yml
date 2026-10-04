@@ -1,15 +1,20 @@
 aid: lica
 deliveryModel:
-  model: unknown
+  model: saas
+  license_evidence:
+    not_product:
+    - lica-world/designmcp
+    - lica-world/gdb
+    - lica-world/lica-dataset
   open_source: unknown
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
+  label: Hosted service · you call their endpoint
   confidence: low
   source:
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
@@ -49,7 +54,7 @@ tags:
 - Company
 - B2B
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Graphic Design
 - Generative AI
 - Benchmarks
@@ -67,6 +72,7 @@ tags_raw:
 - Datasets
 - Model Context Protocol
 - Research
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
